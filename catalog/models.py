@@ -46,8 +46,8 @@ class Product(models.Model):
         **NULLABLE,
         related_name="products"
     )
-    purchase_price = models.IntegerField(
-        verbose_name="Введите стоимость", help_text="Введите стоимость товара"
+    price = models.IntegerField(
+        verbose_name="Цена", help_text="Введите стоимость товара"
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
     updated_at = models.DateTimeField(
