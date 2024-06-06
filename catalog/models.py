@@ -46,7 +46,7 @@ class Product(models.Model):
         **NULLABLE,
         related_name="products"
     )
-    price = models.IntegerField(
+    price = models.FloatField(
         verbose_name="Цена", help_text="Введите стоимость товара"
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
@@ -55,7 +55,7 @@ class Product(models.Model):
     )
 
     def __str__(self):
-        return f"{self.name} {self.description} {self.category} {self.purchase_price}"
+        return f"{self.name} {self.description} {self.category} {self.price}"
 
     class Meta:
         verbose_name = "Продукт"
