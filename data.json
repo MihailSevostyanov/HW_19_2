@@ -1,0 +1,33 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Ноутбуки",
+      "description": "Переносной компьютер, в корпусе которого объединены типичные компоненты персонального компьютера"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфоны",
+      "description": "Мобильные устройства связи"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Телевизоры",
+      "description": "Различные марки, модели"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Мониторы",
+      "description": "Различные диагонали, LED, IPS"
+    }
+  }
