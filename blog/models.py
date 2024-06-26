@@ -19,7 +19,7 @@ class Blog(models.Model):
         help_text="Введите содержание статьи",
     )
     preview = models.ImageField(
-        upload_to="blog/photo",
+        upload_to="preview/",
         verbose_name="Превью",
         help_text="Загрузить превью статьи", **NULLABLE
     )
@@ -36,7 +36,7 @@ class Blog(models.Model):
     )
 
     def __str__(self):
-        return f"{self.title} {self.slug} {self.content} {self.preview}"
+        return f"{self.title} {self.slug} {self.content}"
 
     class Meta:
         verbose_name = "Статья"
