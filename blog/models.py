@@ -23,7 +23,7 @@ class Blog(models.Model):
         verbose_name="Превью",
         help_text="Загрузить превью статьи", **NULLABLE
     )
-    # created_at = models.DateTimeField(auto_now=True, verbose_name="Дата создания", help_text="Укажите дату создания статьи")
+    created_at = models.DateTimeField(auto_now=True, verbose_name="Дата создания", help_text="Укажите дату создания статьи")
     published = models.BooleanField(
         verbose_name="Признак публикации",
         help_text="Укажите признак публикации статьи",
